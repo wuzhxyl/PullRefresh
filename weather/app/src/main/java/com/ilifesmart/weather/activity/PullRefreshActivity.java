@@ -57,13 +57,6 @@ public class PullRefreshActivity extends AppCompatActivity implements View.OnTou
     protected PullRefreshListener mRefreshListener;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pull_refresh);
-        ButterKnife.bind(this);
-    }
-
-    @Override
     public boolean onTouch(View v, MotionEvent event) {
         final int action = event.getAction();
 
